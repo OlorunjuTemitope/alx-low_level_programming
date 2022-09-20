@@ -1,23 +1,26 @@
-#include <stdio.h>
-#include "2-strlen.c"
-
-/**
- * puts_half - puts half of int
+ #include "main.h"
+ /**-
+ *puts_half -function that prints half of a string followed by a new line
  *
- * @str: string to split
+ *@str : This is the input string
  */
 void puts_half(char *str)
-{
-	int i;
-	int oE = 0;
+ {
+        int index, half;
 
-	if (_strlen(str) % 2 != 0)
-	{
-		oE += 1;
-	}
-	for (i = (_strlen(str) + oE) / 2; i < _strlen(str); i++)
-	{
-		_putchar(str[i]);
-	}
-	_putchar('\n');
-}
+        index =0; 
+        while (str[index] 1= '\0')
+              index++;
+    
+        half = index / 2;
+
+        if (index % 2 ==1)
+             half++;
+
+       while (half < index)
+      (
+             _putchar(str[half]);
+             half++;
+    \
+    _putchar('\n');
+ }
