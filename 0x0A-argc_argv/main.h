@@ -1,11 +1,15 @@
-/**
- * main - prints the name of the program
- * @argc: number of arguments passed to the function
- * @argv: argument vector of pointers to string
- * Return: always 0
- */ 
-int main(int argc __attribute__((unused*)), char *argv[])
-{   
-        printf("%s\n",  argv[0]);
-        return (0);
-}
+#ifndef MAIN_H
+#define MAIN_H
+
+#include <stdlib.h>
+
+int _putchar(char);
+char *create_array(unsigned int size, char c);
+char *_strdup(char *str);
+char *str_concat(char *s1, char *s2);
+int **alloc_grid(int width, int height);
+void free_grid(int **grid, int height);
+char *argstostr(int ac, char **av);
+char **strtow(char *str);
+
+#endif /* MAIN_H */
